@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} about me {% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title  color="blue">about</title>
+	<style type="text/css">
+		
+.card {
+	position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+		height: 50%;
+		top: 20%;
+		width:15%;
+		left:80%;
+		
+
+         transition: 0.3s;
+     
+        background-color: white;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+	height: 65%;
+	width: 15%;
+}
+.about-me{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -395px;
+    margin-right: 59px;
+
+}
+#para
+{
+	display: flex;
+	justify-content: left;
+	width: 50vw;
+	text-align: center;
+}
+#para>#fa
+{
+	display: flex;
+}
+
+body {
+  background-image: url("https://writemyessay4me.org/static/img/regular/blog_26.jpg"), url("");
+  background-size: contain;
+  background-color: #cccccc;
+}
+</style>
+
+</head>
+<body bgcolor="skyblue">
+	<p id="a7" >ABOUT ME</p>
+	<! class="about-me" >
+	<br/>
+	<div id="para">
+	<font color="#FF2400" id = "fa">Hello! my name is {{my_name}}. I am a student of <br/>{{edu}}. I am currently</br> persuing {{field}} since 2017.</font>
+    </div>
+	<!printing through python>
+	<div   class="card">
+  <img  id="i1" src="{% static 'images/prashant_chennia.png' %}" alt="prashant_chennia" style="width:100%">
+  <div class="container">
+    <h5 id="h51"><b>PRASHANT </br>THAKUR</b></h5> 
+    <h6 id="h61">CHENNAI BEACH</h6> 
+  </div>
+</div>
+  
+<marquee id="m"><font color="blue"> hello! curious about me</font></marquee>
+</body>
+</html>
+
+
+
+{% endblock %}

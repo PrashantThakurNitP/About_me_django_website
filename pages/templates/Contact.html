@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} my contacts {% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+
+.card {
+  position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+    height: 50%;
+    top: 20%;
+    width:15%;
+    left:80%;
+    
+
+         transition: 0.3s;
+     
+        background-color: white;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+  height: 65%;
+  width: 15%;
+}
+body {
+  background-image: url("https://media.istockphoto.com/photos/woman-hand-pushing-button-smartphone-business-connection-contact-us-picture-id904149760"), url("https://media.istockphoto.com/photos/dialing-telephone-keypad-picture-id508250040");
+  background-size: contain;
+  background-color: #cccccc;
+}
+
+#contact2 {
+    position: fixed;
+    top: 40%;
+    left: 38%;
+    padding: 2%;
+    font-size: 0.7em;
+    color: darkblue;
+    background-color: wheat;
+    z-index: -99;
+}
+ #fc
+  {
+        position: fixed;
+          top: 40%;
+          left: 16.5%;
+          padding: 2%;
+    font-size: 0.7em;
+    color: red;
+    background-color: floralwhite;
+  }
+
+
+	</style>
+
+	
+</head>
+<body bgcolor=" #FFDEAD">
+
+  <p id="a7" >CONTACT  ME</p>
+  
+  <br/>
+    <font id = "fc">
+      Mobile no :</br>
+      Watsup no : </br>
+      Email-Id    : </font>
+
+
+    <font id = "contact2" color="blue">
+        {{mobile}}  <br/> 
+        {{watsup}} <br/>
+       {{email}}  </font>   
+    
+       
+  <!printing through python in view.py by passing in dictionary>
+  <div   class="card">
+  <img  id="i1" src="{% static 'images/3.png' %}" alt="prashant_chennia" style="width:100%">
+  <div class="container">
+    <h5 id="h51"><b>PRASHANT</br> THAKUR</b></h5> 
+    <h6 id="h61">with Aditya Ankul</h6> 
+  </div>
+</div>
+  <marquee id="m"><font color="blue"> here you can contact me!</font></marquee>
+</body>
+</html>
+
+
+
+{% endblock %}

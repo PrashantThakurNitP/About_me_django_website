@@ -1,0 +1,60 @@
+		
+.card {
+  position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+    height: 56%;
+    top: 17%;
+    width:15%;
+    left:80%;
+    
+
+         transition: 0.3s;
+     
+        background-color: white;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+  height: 66%;
+  width: 15%;
+}
+body {
+  background-image: url("https://image.freepik.com/free-vector/watercolor-background-of-friendship-day_23-2147651087.jpg"), url("");
+  background-size: contain;
+  background-color: #cccccc;
+}
+        .slide
+        {
+            height: 90%;
+            width:80%; 
+        }
+        #slide1, #slide2, #slide3, #slide4, #slide5, #slide6 ,#slide7,#slide8,#slide9,#slide10,#slide11,#slide12,#slide13,#slide14,#slide15,
+        #slide16
+        {
+          display: none;
+        }
+        #slide1,#slide7,#slide2, #slide3, #slide4, #slide5, #slide6,#slide8,#slide9,#slide10,#slide11,#slide12,#slide13,#slide14,#slide15,#slide16
+        {
+             height: 72%;
+            width:65%; 
+        }
+  #h51
+{
+  top:49%;
+  left:80%;
+}
+   #h61
+{
+  top: 59%;
+  left: 82%;
+}
+

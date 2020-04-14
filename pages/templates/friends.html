@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}my friends{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>friends</title>
+	<script src="{% static 'friends1.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'friends1.css' %}">
+
+	
+</head>
+<body bgcolor="#EE82EE"></body>
+<p id="a7" >FRIENDS INFO</p>
+
+
+<!for multiple spaces>
+<br/>
+<font id="f">
+  {{a}}
+<br/>
+{{g}}
+<br/>
+{{s}}</font>
+<div   class="card">
+ 
+                   <img  id="slide1" src="{% static 'images/friends/aman.png' %}" style="width:100%">
+                  <img  id="slide2" src="{% static 'images/friends/suraj.png' %}" style="width:100%" >
+                 <img id="slide3" src="{% static 'images/friends/kishan2.png' %}" style="width:100%" >
+                <img id="slide4" src="{% static 'images/f1.png' %}" style="width:100%">
+                <img id="slide5" src="{% static 'images/friends/chandan.png' %}" style="width:100%">
+               <img id="slide6" src="{% static 'images/friends/kishan_kumar51.png' %}" style="width:100%" >
+              <img id="slide7" src="{% static 'images/photo.jpg' %}" style="width:100%">
+              <img  id="slide8" src="{% static 'images/friends/anurag.png' %}" alt="prashant_patna" style="width:100%">
+              <img  id="slide9" src="{% static 'images/friends/gaurav.png' %}" style="width:100%" >
+               <img  id="slide10" src="{% static 'images/friends/devendra.png' %}" style="width:100%" >
+                <img  id="slide11" src="{% static 'images/friends/vivek.png' %}" style="width:100%" >
+                 <img  id="slide12" src="{% static 'images/friends/ankit.png' %}" style="width:100%" >
+                  <img  id="slide13" src="{% static 'images/friends/vikash.png' %}" style="width:100%" >
+                   <img  id="slide14" src="{% static 'images/friends/prateek.png' %}" style="width:100%" >
+                   <img  id="slide15" src="{% static 'images/friends/udit.png' %}" style="width:100%" >
+                    <img  id="slide16" src="{% static 'images/friends/subprabhat.png' %}" style="width:100%" >
+
+           
+           
+        </div>
+  <div class="container">
+    <h5 class="friend_c" id="h51">MY FRIENDS </h5> 
+    <! <h6 id="h61"><!along with friend</h6> 
+  </div>
+</div>
+
+
+
+
+&nbsp
+
+<marquee id="m"><font color="red">About my friends</font></marquee>
+<br/><br/>
+&nbsp
+
+   
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}titans home page{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>homepage</title>
+	<!<link rel="stylesheet" type="text/css" href="effect.css">
+
+<style type="text/css">
+	body {
+  background-image: url("https://images.unsplash.com/photo-1527784281695-866fa715d9d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"), url("");
+  background-size: contain;
+  background-color: #cccccc;
+}
+.about-me{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: -395px;
+    margin-right: 59px;
+
+}
+.m1
+{
+	left: 50%
+}
+  #h52
+  {
+    
+   
+   position: fixed;
+    top:50%;
+    color: red;
+    left: 82%;
+    font-size: 0.8em;
+  }
+  #h62
+  {
+    
+   position: fixed;
+    top:62%;
+    color: blue;
+    left: 82%;
+     font-size: 0.5em;
+
+  }
+
+
+</style>
+
+	
+</head>
+<body bgcolor="#00FF7F"></body>
+<p id="a7" >HOME PAGE</p>
+
+
+<!for multiple spaces>
+<br/>
+<font id="fa">{{hi}}</font>
+
+
+
+<br/>
+<div   class="card">
+  <img  id="i1" src="{% static 'images/prashant_patna.png' %}" alt="prashant_patna" style="width:100%">
+  <div class="container">
+    <h5 id="h52">PRASHANT THAKUR</h5> 
+    <h6 id="h62">B.Tech in CSE,</br>NIT PATNA</h6> 
+  </div>
+</div>
+
+
+<marquee  id="m"><font color="red">welcome to home page</font></marquee>
+<br/><br/>
+&nbsp
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} myhobbies {% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hobbies</title>
+	<style type="text/css">
+		
+.card {
+	position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+		height: 50%;
+		top: 20%;
+		width:15%;
+		left:80%;
+		
+
+         transition: 0.3s;
+     
+        background-color: white;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+	height: 65%;
+	width: 15%;
+	
+  
+}
+#fh
+{
+	position: fixed;
+    top: 47%;
+    left: 20%;
+    padding: 2%;
+    font-size: 110%;
+    color: red;
+	background-color: floralwhite;
+}
+  body {
+  background-image: url("https://media.istockphoto.com/photos/shuttercock-on-badminton-racket-with-blurred-background-badminton-picture-id991750056"), url("");
+  background-size: cover;
+  background-color: #cccccc;
+}
+	</style>
+</head>
+<body >
+	<p id="a7" >MY HOBBIES</p>
+	
+	<br/>
+	<font id ="hob"color="prussian blue">my hobbies are</font>
+	<br/>
+	<font id="fh">
+		{{game}}
+	  <br/>
+	 {{code}}
+	</font>
+	<div   class="card">
+  <img  id="i1" src="{% static 'images/hobbies.png' %}" alt="prashant_patna" style="width:100%">
+  <div class="container">
+    <h5 id="h51"><b>PRASHANT </br>THAKUR</b></h5> 
+    <h6 id="h61">Memories of 1st year</h6> 
+  </div>
+</div>
+
+	
+	
+<marquee id="m"><font color="blue"> hobbies represent a person's nature</font></marquee>
+</body>
+</html>
+
+
+
+{% endblock %}

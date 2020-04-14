@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}my family{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>family</title>
+	<style type="text/css">
+		
+.card {
+  position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+    height: 52%;
+    top: 19%;
+    width:16%;
+    left:80%;
+    
+
+         transition: 0.3s;
+     
+        background-color: white;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+  height: 65%;
+  width: 16%;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/1312023/pexels-photo-1312023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"), url("");
+  background-size: contain;
+  background-color: #cccccc;
+  z-index: -100;
+}
+.fam
+  {
+        position: fixed;
+          top: 40%;
+          left: 15%;
+          padding: 1%;
+    font-size: 90%;
+    color: red;
+    background-color: floralwhite;
+  }
+  .fam2
+  {
+    position: fixed;
+        top: 40%;
+        right: 43%;
+        padding: 1%;
+    font-size: 90%;
+    color: darkblue;
+    background-color: wheat;
+    z-index: -99;
+  }
+
+	</style>
+	
+
+	
+</head>
+<body bgcolor="7FFFD4" >
+<p id="a7" >FAMILY INFO</p>
+
+
+
+<!for multiple spaces>
+<br/>
+<font class="fam">
+  FATHER'S NAME 
+</br>
+
+  MOTHERS'S NAME
+<br/>
+   BROTHER'S NAME
+<br/>
+  UNCLES'S NAME
+  </font> 
+<font class="fam2"> {{father}}
+              </br>
+              {{mother}}
+            </br>
+              {{brother}}
+            </br>
+              {{uncle}}
+           </font>
+<div   class="card">
+  <img  id="i1" src="{% static 'images/4.png' %}" alt="prashant_patna" style="width:100%">
+  <div class="container">
+    <h5 id="h51">PRASHANT THAKUR</h5> 
+    <h6 id="h61">DIWALI CELEBRATION</h6> 
+  </div>
+</div>
+
+
+
+
+&nbsp
+
+<marquee id="m"><font color="red">About my family</font></marquee>
+<br/><br/>
+&nbsp
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  
+   <title>{% block title %} titans1{% endblock %} </title>
+  
+      <script src="{% static 'base1.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'base1.css' %}">
+    <style type="text/css">
+      .sidebar
+    {
+      display: flex;
+      position: fixed;
+      left: 0vw;
+      top: 5vh;
+       
+     
+      background-color:#8A0651;
+      height: 90vh;
+      margin-top: 0vh;
+      padding-top: 10vh;
+
+       flex-wrap: nowrap; 
+       /*justify-content: center;*/
+       flex-flow: column;
+       width: 12vw;
+       
+
+    }
+    .sidebar>a
+    { 
+     
+
+      display: flex;
+      position: fixed;
+      left: 0vw;
+      top:5vh;
+      
+     
+       
+      /* background-color: #f1f1f1;*/
+        margin-top: 10vh;
+          margin: 0px;
+         padding: 1px;
+         flex-wrap: wrap;
+          flex-flow: column;
+          font-size: 0.5em;
+       
+
+    }
+     .rightbar
+    {
+      display: flex;
+      position: fixed;
+      
+      top: 5vh;
+      right:-2vw; 
+       
+     
+      background-color:#8A0651;
+      height: 100vh;
+      margin-top: 0vh;
+      padding-top: 10vh;
+
+
+       flex-wrap: nowrap; 
+       /*justify-content: center;*/
+       flex-flow: column;
+       width: 5vw;
+       
+
+    }
+
+       .navbar
+
+    {  
+    
+      display: flex;
+       overflow-y: hidden;
+       position: fixed;
+       top:5vh;
+       margin-left: -5vw;
+        width: 105vw;
+       
+      background-color:#424242;
+      height: 7.5vh;
+      margin-top: 0vh;
+      
+
+       flex-wrap: nowrap; 
+       justify-content: center;
+       flex-flow: row;
+      
+       
+
+    }
+    .navbar>div
+    { 
+      display: flex;
+      
+       
+     
+       
+       background-color: #424242;
+      
+          /*margin: 5vw;*/
+         
+         padding-right: 1vw;
+         padding-left: 1vw;
+         flex-wrap: wrap;
+          flex-flow: row;
+          font-size: 0.5em;
+          border-radius: 4px;
+       
+
+    }
+        .footer
+    {
+       
+      display: flex;
+      position: absolute;
+      top:110vh;
+     
+
+      background-color:#424242;
+      height: 20vh;
+      margin-bottom:  0vh;
+
+       flex-wrap: nowrap; 
+       justify-content: center;
+       margin-left: -5vw;
+
+       align-self: bottom;
+       flex-flow: row;
+       width: 105vw;
+       
+
+    }
+    .footer>div
+    {
+      
+      display: flex;
+      
+      
+
+
+       background-color: #000000;
+          margin: 5px;
+         padding: 1px;
+         flex-wrap: wrap;
+          flex-flow: row;
+          font-size: 0.5em;
+          height: 2em;
+          color: #FFFFFF
+       
+
+    }
+   
+   
+    .body
+    {
+       display:flex;
+       margin-left:12vh;
+       margin-top: 17vw;
+      
+       width: 83vw;
+       height:83vh;
+
+
+
+
+    }
+    
+    .header
+    {
+      
+      display:flex;
+      overflow-y: hidden;
+      position: fixed;
+      top: 0vh;
+      margin-left: -5vw;
+
+      
+      align-self: top;
+      height: 5vh;
+      width: 105vw;
+      background-color:#8A0651;
+
+    }
+
+    </style>
+    
+
+  
+</head>
+<body>
+
+  <div class="header"></div>
+   <div class="body">
+    <!body>
+ {% block content %}
+<!provide code to other page from this page at this location location is important for layout>
+    {% endblock %}
+
+    <!body close>
+  </div>
+   <div class="navbar">
+    <!navebar start>
+    
+       
+          <div id="a1"class="dropdown">
+          <button onclick="myFunction('myDropdown2')" class="dropbtn">LINKDIN</button>
+          <div id="myDropdown2" class="dropdown-content">
+         <a class="forz" href="https://www.linkedin.com/feed/">HOME</a>
+         <a class="forz"  href="https://www.linkedin.com/in/prashant-thakur-531842166/">PROFILE</a>
+         <a class="forz"  href="https://www.linkedin.com/notifications/">NOTIFICATION</a>
+          </div>
+          </div>
+
+          <div id="a2"class="dropdown">
+          <button onclick="myFunction('myDropdown3')"  class="dropbtn">GMAIL</button>
+          <div id="myDropdown3" class="dropdown-content">
+         <a class="for-z" href="">SIGNIN</a>
+         <a class="for-z" href="#">OUTBOX</a>
+         <a class="for-z" href="https://mail.google.com/mail/u/0/?sw=2&token=%5B%22cftp%22,%22ace702d00b%22,%22zf--00poQP9sebWuwkJFqg%5Cu003d%5Cu003d%22,%22ZyMrc6cBAw-rFZnvtXyj5A%5Cu003d%5Cu003d%22,%227294,6765,7179,7403,6804,7310,7240,7292,6969,7192,6863,7026,6949,6821,7023,7461,7153,6763,7050,7283,7161,7449,7008,7068,7418,7016,7393,7460,6778,7395,7195,7386,7427,7027,7236,7196,7387,7180,7156,7238,7150,7137,6772,7360,7471,7469,7096,7295,7018,7164,6929,6792,6984,7172,7024,7020,6807,7453,7419,7350,7398,7361,6806,6999,10041,6887,7335,6812,7322,7243,7278,6853,7321,7030,7092%22%5D&dilte=0#inbox">INBOX 1</a>
+          </div>
+          </div>
+
+          <div id="a3"class="dropdown">
+          <button onclick="myFunction('myDropdown4')"   class="dropbtn">HACKEREARTH</button>
+          <div id="myDropdown4" class="dropdown-content">
+         <a class="for-z" href="https://www.hackerearth.com/practice/codemonk/">PROBLEMS</a>
+         <a class="for-z" href="https://www.hackerearth.com/@prashant1230">PROFILE</a>
+         <a class="for-z" href="https://www.hackerearth.com/challenges/">CHALLENGES</a>
+          </div>
+        </div>
+        
+            <div id="a4" class="dropdown" >
+          <button onclick="myFunction('myDropdown1')"   class="dropbtn">QUORA</button>
+          <div id="myDropdown1" class="dropdown-content">
+         <a class="forz" href="https://www.quora.com/">HOME</a>
+         <a class="forz" href="https://www.quora.com/profile/Prashant-Thakur-100">PROFILE</a>
+         <a class="forz" href="https://www.quora.com/topic/Web-Designers">WEB DESIGNERS</a>
+         <a class="forz" href="https://www.quora.com/q/nuzlrtkqmiieyngv">BIT AND BYTES</a>
+         <a class="forz" href="https://www.quora.com/bookmarked_answers">BOOKMARKS</a>
+         <a class="forz" href="https://www.quora.com/topic/College-Advice-for-Careers">CAREER ADVICE</a>
+         <a class="forz" href="https://www.quora.com/topic/Studying-Advice">STUDYING ADVICE</a>
+          </div>
+          </div>
+
+
+          
+         
+
+          <div id="a6"class="dropdown">
+          <button onclick="myFunction('myDropdown7')" class="dropbtn">YOUTUBE</button>
+          <div id="myDropdown7" class="dropdown-content">
+         <a href="https://www.youtube.com/">HOME</a>
+         <a href="https://www.youtube.com/watch?v=WlDExOMK9es&list=PL1FgJUcJJ03v0YDsbsRbKb6KOxyNjTLFF">DJANGO2.1</a>
+         <a href="https://www.youtube.com/watch?v=v8Z1W1_-9cc&list=PL7ersPsTyYt1ebhCAv0eLaQE-urdmELIx">DBMS</a>
+          <a href="https://premium.mysirg.com/learn/Python-for-Beginners?">PYTHON</a>
+           <a href="https://www.youtube.com/watch?v=rbarR4_gaH8&list=PLL_LQvNX4xKyiExzq9GKwORoH6nvaRnOQ">SQL</a>
+            <a href="https://www.youtube.com/watch?v=L_mVJlTe4TU&list=RDMM&start_radio=1">MUSIC</a>
+          </div>
+
+           <div id="a5" class="dropdown">
+          <button onclick="myFunction('myDropdown6')" class="dropbtn">CODECHEF</button>
+          <div id="myDropdown6" class="dropdown-content">
+         <a href="https://www.codechef.com/problems/school">PRACTISE</a>
+         <a href="https://www.codechef.com/users/p_09_t">PROFILE</a>
+         <a href="https://www.codechef.com/contests">CHALLENGES</a>
+          </div>
+          </div>
+    
+  </div>
+</div>
+  <!navebar end>
+  </div>
+  <div class="sidebar">
+    <!sidebar start>
+   
+        <!vertical link>
+        <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)"  id="b1" href="{% url 'home' %}">HOME</a>
+        <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)" id="b2" href="{% url 'about' %}">ABOUT</a>
+        
+
+       <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)"  id="b3" href="{% url 'contact' %}">CONTACT</a>
+       <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)" id="b4" href="{% url 'family' %}" > FAMILY </a>
+        <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)" id="b5" href="{% url 'friends'%}" >FRIENDS</a>
+         <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)" id="b6" href="{% url 'skills' %}">SKILLS </a>
+
+       <a onmouseover="myfunction1(id)" onmouseout="myfunction2(id)" id="b7" href="{% url 'hobbies' %}">HOBBIES</a>
+      
+       
+
+       
+       
+
+         
+        
+  <!sidebar end>
+  </div>
+  <div class="rightbar"></div>
+ 
+ 
+
+  <div class="footer">
+    <!footer start>
+     <div>home</div>
+    <div>about</div>
+    <div>medical report</div>
+    <div>presciption</div>
+    <div>physical data</div>
+    <!footer close>
+
+    
+  </div>
+
+</body>
+</html>

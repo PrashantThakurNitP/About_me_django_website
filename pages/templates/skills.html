@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} my contacts {% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    
+.card {
+ 
+      /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+     display: flex;
+     margin-right: 10vw;  
+    height: 65vh;
+   
+    width:20vw;
+   
+    
+
+         transition: 0.3s;
+     
+        background-color: white;
+         border-radius: 4px;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#i1
+{
+  display: flex;
+     margin-right: 10vw; 
+  height: 40vh;
+  width: 20vw;
+   border-radius: 4px;
+}
+body {
+  background-image: url("https://images.onepixel.com/09c7ea99-b997-a7a1-8743-2a006be4477d_1000.jpg?auto=format&q=80&mark=watermark%2Fcenter-v5.png&markalign=center%2Cmiddle&h=1000&w=1000&markscale=50&markalpha=80&s=afa063d0bb3e3e72b9fdc579f251c1ab"), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpq3Z1iLtzyQa5FduK7v_rWxIBuWp6yyhMPDnVoy7vwmpskYQ");
+  background-color: #cccccc;
+  background-size: cover;
+  
+}
+
+
+.f21s
+  {
+   
+    font-size: 0.7em;
+    color: black;
+    font-style: bold;
+    background-color:#8A0651 ;
+    z-index: -99;
+    
+  }
+  .f3s
+  {
+   
+    font-size: 0.7em;
+    text-decoration: none;
+    color: white;
+    background-color: #424242;
+    z-index: -99;
+  }
+  .main
+  {
+    display: flex;
+   
+    flex-wrap: wrap-reverse;
+
+    
+  }
+  .main > div
+  {
+    display: flex;
+    flex-flow: column-reverse;
+    flex-wrap: wrap-reverse;
+
+   }
+   .main >.sub1
+  
+  {
+    display: flex;
+    flex-flow: column;
+    padding: 0vh;
+    margin-left: 10vw;
+    margin-top: 0vh;
+    border-radius: 4px;
+  }
+    .main >.card
+  {
+    display: flex;
+    flex-flow: column;
+    padding: 0vh;
+    margin-left: -20vw;
+    margin-top: 0vh;
+    margin-right: 10vw;
+  }
+  .container
+  {
+    display: flex;
+    flex-flow: column;
+    margin-right: 7vw;
+  }
+  .container > #h52
+  {
+     display: flex;
+    padding: 0vh;
+    
+   
+    color: red;
+
+  }
+   .container > #h62
+  {
+     display: flex;
+    padding: 0vh;
+    
+   
+    color: blue;
+
+  }
+  /* <h2 class="hack">hack</h2>>*?
+  </style>
+  
+</head>
+<body background="https://cdn.pixabay.com/photo/2018/04/06/11/21/office-3295561__480.jpg">
+
+ <div class="main">
+    <p id="a7" >SKILLS</p>
+  <!maindiv>
+  <div class="sub1">
+  
+  
+  <br/>
+  <font class = "f21s">PROGRAMMING LANGUAGE  </font> 
+  <a class="f3s" href="https://www.programiz.com/c-programming">{{a}}  </a> 
+    <a class="f3s" href="https://www.tutorialspoint.com/cplusplus/"> {{b}}<br/>  
+    <a class="f3s" href="https://www.tutorialspoint.com/python/"> {{c}}</a> 
+    <a class="f3s" href="https://developer.mozilla.org/bm/docs/Web/JavaScript">  {{d}}</a>
+     
+    
+  <font class="f21s">SCRIPTING LANGUAGE  </font>
+    <a class="f3s" href="https://en.wikipedia.org/wiki/HTML">{{e}} </a>
+    <a class="f3s"href="https://www.w3schools.com/css/css_intro.asp"> {{f}} </a> 
+
+  <font class="f21s" >OTHER SKILL  </font>
+   <a class="f3s" href="https://realpython.com/tutorials/django/">  {{g}} </a>
+   </div>
+  <!printing through python in view.py by passing in dictionary>
+  <div   class="card">
+  <img  id="i1" src="{% static 'images/skills.png' %}" alt="prashant_patna" style="width:100%">
+  <div class="container">
+    <a id="h52">PRASHANT THAKUR </a> 
+    <a id="h62"> INSIDE OF  CLASSROOM </a> 
+  </div>
+
+  </div>
+  
+</div>
+
+  
+  <marquee id="m"><font color="blue"> This is all about my skills!</font></marquee>
+  <!main div end>
+
+</body>
+</html>
+
+
+
+
+{% endblock %}
